@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product detail - StockPilot</title>
+<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<header class="nav">
+<form role="search" action="products.html">
+<input type="search" name="q" placeholder="Search" aria-label="Search products">
+<button type="submit" aria-label="Search"><img src="images/search.png" alt=""></button>
+</form>
+<nav aria-label="Categories"><ul>
+<li><a href="products.html">Electronics</a></li>
+<li><a href="products.html">Groceries</a></li>
+<li><a href="products.html">Pharmacy</a></li>
+<li><a href="products.html">Furniture</a></li>
+<li><a href="products.html">Toys</a></li>
+<li><a href="products.html">Books</a></li>
+<li><a href="products.html">Home</a></li>
+<li><a href="products.html">Fashion</a></li>
+<li><a href="products.html">Babies</a></li>
+<li><a href="products.html">Sales</a></li>
+</ul></nav>
+</header>
+<main class="detail">
+<a href="products.html">&larr; Back to products</a>
+<h1>MacBook Air 13" M5</h1>
+<section class="top">
+<img src="images/macbook-air.webp" alt="MacBook Air in Midnight">
+<table class="data spec">
+<caption>Specifications</caption>
+<tbody>
+<tr><th scope="row">Chip</th><td>M5</td></tr>
+<tr><th scope="row">Display</th><td>13.6" Liquid Retina</td></tr>
+<tr><th scope="row">Memory</th><td>16GB Unified</td></tr>
+<tr><th scope="row">Storage</th><td>512GB SSD</td></tr>
+<tr><th scope="row">Camera</th><td>12MP Center Stage</td></tr>
+<tr><th scope="row">Connectivity</th><td>Wi-Fi 7</td></tr>
+<tr><th scope="row">Color</th><td>Midnight</td></tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Stock history</h2>
+<div class="table-wrap">
+<table class="data">
+<thead>
+<tr><th>Date</th><th>Change</th><th>Type</th><th>Quantity after</th></tr>
+</thead>
+<tbody>
+<tr><td>2026-09-01</td><td>+70</td><td>Restock</td><td>70</td></tr>
+<tr><td>2026-09-20</td><td>+50</td><td>Restock</td><td>120</td></tr>
+<tr><td>2026-09-22</td><td>-12</td><td>Sale</td><td>108</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="actions-row">
+<a class="btn" href="product-form.html">Edit</a>
+<button class="btn danger" type="button">Delete</button>
+</div>
+</main>
+</body>
+</html>

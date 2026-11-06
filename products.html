@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products - StockPilot</title>
+<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<header class="nav">
+<form role="search" action="products.html">
+<input type="search" name="q" placeholder="Search" aria-label="Search products">
+<button type="submit" aria-label="Search"><img src="images/search.png" alt=""></button>
+</form>
+<nav aria-label="Categories"><ul>
+<li><a href="products.html">Electronics</a></li>
+<li><a href="products.html">Groceries</a></li>
+<li><a href="products.html">Pharmacy</a></li>
+<li><a href="products.html">Furniture</a></li>
+<li><a href="products.html">Toys</a></li>
+<li><a href="products.html">Books</a></li>
+<li><a href="products.html">Home</a></li>
+<li><a href="products.html">Fashion</a></li>
+<li><a href="products.html">Babies</a></li>
+<li><a href="products.html">Sales</a></li>
+</ul></nav>
+</header>
+<div class="layout">
+<aside class="filters" aria-label="Filters">
+<form>
+<fieldset>
+<legend>Delivery</legend>
+<label><input type="checkbox" name="delivery"> Get it by tomorrow</label>
+</fieldset>
+<fieldset>
+<legend>Condition</legend>
+<label><input type="checkbox" name="condition"> New</label>
+<label><input type="checkbox" name="condition"> Renewed</label>
+<label><input type="checkbox" name="condition"> Used</label>
+</fieldset>
+<fieldset>
+<legend>Price</legend>
+<label><input type="checkbox" name="price"> Up to $500</label>
+<label><input type="checkbox" name="price"> $500 to $900</label>
+<label><input type="checkbox" name="price"> $900 to $1300</label>
+<label><input type="checkbox" name="price"> $1300 to $2400</label>
+<label><input type="checkbox" name="price"> $2400 &amp; above</label>
+</fieldset>
+<fieldset>
+<legend>Brands</legend>
+<label><input type="checkbox" name="brands"> Apple</label>
+<label><input type="checkbox" name="brands"> HP</label>
+<label><input type="checkbox" name="brands"> Asus</label>
+<label><input type="checkbox" name="brands"> Lenovo</label>
+<label><input type="checkbox" name="brands"> Acer</label>
+</fieldset>
+<fieldset>
+<legend>RAM size</legend>
+<label><input type="checkbox" name="ram-size"> 8GB</label>
+<label><input type="checkbox" name="ram-size"> 16GB</label>
+<label><input type="checkbox" name="ram-size"> 32GB</label>
+<label><input type="checkbox" name="ram-size"> 64GB</label>
+<label><input type="checkbox" name="ram-size"> 128GB</label>
+</fieldset>
+</form>
+</aside>
+<main>
+<h1>Products</h1>
+<a href="product-form.html">Add Product</a>
+<div class="table-wrap">
+<table class="data">
+<thead>
+<tr><th>Image</th><th>SKU</th><th>Name</th><th>Category</th><th>Stock</th><th>Price</th><th>Actions</th></tr>
+</thead>
+<tbody class="js-product-table">
+<tr>
+<td><img class="thumb" src="images/neo-blue.jpg" alt="MacBook Neo 13" A18 Pro, 512GB, Indigo"></td>
+<td>NEO-BL-512</td>
+<td><a href="product-detail.html">MacBook Neo 13" A18 Pro, 512GB, Indigo</a></td>
+<td>Laptops</td>
+<td class="num">14</td>
+<td class="num">$789</td>
+<td><a href="product-detail.html">View</a> | <a href="product-form.html">Edit</a></td>
+</tr>
+<tr>
+<td><img class="thumb" src="images/macbook-air.webp" alt="MacBook Air 13" M5, 16GB, 512GB, Midnight"></td>
+<td>MBA-M5-512</td>
+<td><a href="product-detail.html">MacBook Air 13" M5, 16GB, 512GB, Midnight</a></td>
+<td>Laptops</td>
+<td class="num">108</td>
+<td class="num">$1,249</td>
+<td><a href="product-detail.html">View</a> | <a href="product-form.html">Edit</a></td>
+</tr>
+<tr>
+<td><img class="thumb" src="images/neo-silver.jpg" alt="MacBook Neo 13" A18 Pro, 256GB, Silver"></td>
+<td>NEO-SL-256</td>
+<td><a href="product-detail.html">MacBook Neo 13" A18 Pro, 256GB, Silver</a></td>
+<td>Laptops</td>
+<td class="num">32</td>
+<td class="num">$689</td>
+<td><a href="product-detail.html">View</a> | <a href="product-form.html">Edit</a></td>
+</tr>
+<tr>
+<td><img class="thumb" src="images/pro.webp" alt="MacBook Pro 16" M5 Pro, 24GB, 1TB, Space Black"></td>
+<td>MBP-M5P-1TB</td>
+<td><a href="product-detail.html">MacBook Pro 16" M5 Pro, 24GB, 1TB, Space Black</a></td>
+<td>Laptops</td>
+<td class="num low">6</td>
+<td class="num">$2,759</td>
+<td><a href="product-detail.html">View</a> | <a href="product-form.html">Edit</a></td>
+</tr>
+<tr>
+<td><img class="thumb" src="images/imac-silver.webp" alt="iMac 24" M4, 16GB, 256GB, Silver"></td>
+<td>IMAC-M4-256</td>
+<td><a href="product-detail.html">iMac 24" M4, 16GB, 256GB, Silver</a></td>
+<td>Desktops</td>
+<td class="num low">0</td>
+<td class="num">$1,459</td>
+<td><a href="product-detail.html">View</a> | <a href="product-form.html">Edit</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<nav class="pager" aria-label="Pagination">
+<span class="disabled">Previous</span>
+<a href="#" aria-current="page">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">Next</a>
+</nav>
+</main>
+</div>
+  <script src="app.js"></script>
+  <script>
+    checkAuth();
+    renderProducts();
+  </script>
+</body>
+</html>

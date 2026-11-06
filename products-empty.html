@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No products found - StockPilot</title>
+<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<header class="nav">
+<form role="search" action="products.html">
+<input type="search" name="q" placeholder="Search" aria-label="Search products">
+<button type="submit" aria-label="Search"><img src="images/search.png" alt=""></button>
+</form>
+<nav aria-label="Categories"><ul>
+<li><a href="products.html">Electronics</a></li>
+<li><a href="products.html">Groceries</a></li>
+<li><a href="products.html">Pharmacy</a></li>
+<li><a href="products.html">Furniture</a></li>
+<li><a href="products.html">Toys</a></li>
+<li><a href="products.html">Books</a></li>
+<li><a href="products.html">Home</a></li>
+<li><a href="products.html">Fashion</a></li>
+<li><a href="products.html">Babies</a></li>
+<li><a href="products.html">Sales</a></li>
+</ul></nav>
+</header>
+<div class="layout">
+<aside class="filters" aria-label="Filters">
+<form>
+<fieldset>
+<legend>Delivery</legend>
+<label><input type="checkbox" name="delivery"> Get it by tomorrow</label>
+</fieldset>
+<fieldset>
+<legend>Condition</legend>
+<label><input type="checkbox" name="condition"> New</label>
+<label><input type="checkbox" name="condition"> Renewed</label>
+<label><input type="checkbox" name="condition"> Used</label>
+</fieldset>
+<fieldset>
+<legend>Price</legend>
+<label><input type="checkbox" name="price"> Up to $500</label>
+<label><input type="checkbox" name="price"> $500 to $900</label>
+<label><input type="checkbox" name="price"> $900 to $1300</label>
+<label><input type="checkbox" name="price"> $1300 to $2400</label>
+<label><input type="checkbox" name="price"> $2400 &amp; above</label>
+</fieldset>
+<fieldset>
+<legend>Brands</legend>
+<label><input type="checkbox" name="brands"> Apple</label>
+<label><input type="checkbox" name="brands"> HP</label>
+<label><input type="checkbox" name="brands"> Asus</label>
+<label><input type="checkbox" name="brands"> Lenovo</label>
+<label><input type="checkbox" name="brands"> Acer</label>
+</fieldset>
+<fieldset>
+<legend>RAM size</legend>
+<label><input type="checkbox" name="ram-size"> 8GB</label>
+<label><input type="checkbox" name="ram-size"> 16GB</label>
+<label><input type="checkbox" name="ram-size"> 32GB</label>
+<label><input type="checkbox" name="ram-size"> 64GB</label>
+<label><input type="checkbox" name="ram-size"> 128GB</label>
+</fieldset>
+</form>
+</aside>
+<main>
+<h1>Products</h1>
+<div class="table-wrap">
+<table class="data">
+<thead>
+<tr><th>Image</th><th>SKU</th><th>Name</th><th>Category</th><th>Stock</th><th>Price</th><th>Actions</th></tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="7" class="state">
+<h2>No products found</h2>
+<p>Try a different search or clear your filters.</p>
+<a class="btn" href="products.html">Clear filters</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+</div>
+</body>
+</html>

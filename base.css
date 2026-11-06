@@ -1,0 +1,120 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#009579;--dark:#00604e;--red:#d71111;--line:#ddd}
+body{font-family:system-ui,sans-serif;color:#222;background:#f5f7f6;line-height:1.4}
+a{color:var(--dark)}
+h1{margin-bottom:16px}
+
+/* top nav */
+.nav{position:sticky;top:0;z-index:1;display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:var(--dark);padding:8px 16px}
+.nav form{display:flex;flex:1;min-width:220px}
+.nav input{flex:1;height:32px;padding:0 8px;border:0;border-radius:4px 0 0 4px}
+.nav form button{width:36px;border:0;border-radius:0 4px 4px 0;background:#fff;cursor:pointer}
+.nav form img{height:20px}
+.nav ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.nav li a{display:block;padding:6px 10px;border-radius:4px;background:var(--green);color:#fff;text-decoration:none}
+
+/* buttons */
+.btn{display:inline-block;height:40px;padding:0 24px;border:0;border-radius:6px;background:var(--green);color:#fff;font-size:16px;line-height:40px;text-align:center;text-decoration:none;cursor:pointer}
+.btn.secondary{background:#fff;color:var(--dark);border:1px solid var(--dark)}
+.btn.danger{background:var(--red)}
+.actions-row{display:flex;gap:12px;margin-top:20px}
+
+/* centered card pages (login + form) */
+.center{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;background:var(--green)}
+.card{width:100%;max-width:400px;padding:30px;border-radius:10px;background:#fff}
+.brand{color:var(--green);font-size:40px;text-align:center}
+.card label{display:block;margin:14px 0 4px;font-weight:600}
+.card input:not([type=checkbox]),.card select,.card textarea{width:100%;padding:8px;border:1px solid #bbb;border-radius:6px;font:inherit}
+.card .check{display:flex;align-items:center;gap:8px;font-weight:400}
+.card .btn{width:100%;margin-top:20px}
+.card .actions-row .btn{margin-top:0}
+.invalid{border-color:var(--red)!important}
+.error{padding:8px 10px;border-radius:6px;background:#fdecec;color:#c00;font-size:14px}
+
+/* tables */
+.table-wrap{overflow-x:auto}
+.data{width:100%;border-collapse:collapse;background:#fff}
+.data th,.data td{padding:8px 12px;border:1px solid var(--line);text-align:left}
+.data th{background:#f0f0f0}
+
+/* product detail */
+.detail{max-width:1000px;margin:0 auto;padding:24px 16px}
+.detail section{margin-top:24px}
+.top{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;align-items:start}
+.top img{width:100%;max-width:420px;border-radius:8px;background:#fff}
+.spec caption{padding:8px;text-align:left;font-weight:700}
+.spec th{width:35%}
+.layout{display:flex;align-items:flex-start;gap:20px;padding:20px 16px}
+.filters{flex:0 0 220px;padding:12px;border-radius:8px;background:#fff}
+.filters fieldset{margin-bottom:14px;border:0}
+.filters legend{margin-bottom:6px;font-weight:700}
+.filters label{display:block;padding:2px 0}
+main{flex:1;min-width:0}
+.thumb{display:block;width:48px;height:48px;object-fit:contain}
+.num{text-align:right}
+.low{color:var(--red);font-weight:700}
+.pager{display:flex;justify-content:center;gap:6px;margin-top:16px}
+.pager a,.pager span{padding:6px 12px;border:1px solid var(--line);border-radius:4px;background:#fff;text-decoration:none}
+.pager [aria-current]{background:var(--green);border-color:var(--green);color:#fff}
+.pager .disabled{color:#999}
+
+/* loading skeleton */
+.sk{display:block;height:14px;border-radius:4px;background:linear-gradient(90deg,#e6e6e6 25%,#f3f3f3 50%,#e6e6e6 75%);background-size:200% 100%;animation:shimmer 1.2s linear infinite}
+.sk-img{width:48px;height:48px}
+@keyframes shimmer{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.sk{animation:none}}
+
+/* empty + error states */
+.state{padding:40px 16px;text-align:center}
+.state h2{margin-bottom:8px}
+.state p{margin-bottom:16px;color:#555}
+.state.error{border:1px solid var(--red);border-left-width:6px;border-radius:6px;background:#fdecec}
+.state.error h2{color:#c00}
+@media (max-width:800px){.layout{flex-direction:column}.filters{flex:none;width:100%}}
+/* Dashboard Premium Styles */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid var(--line);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h3 {
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.stat-card h1 {
+  color: var(--green);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background: var(--green);
+}
+
